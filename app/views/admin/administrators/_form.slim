@@ -1,0 +1,8 @@
+= simple_form_for @form, url: [:admin, @form], html: { class: 'form-horizontal' } do |f|
+	= f.input :name, as: :string
+	= f.input :phone, as: :tel
+	= f.input :password, as: :password
+
+	.form-group.row
+    .col-sm-5
+      = f.button :submit, 'Подтвердить', class: 'btn btn-primary'

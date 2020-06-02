@@ -1,0 +1,23 @@
+- attributes = %w(id name description average_rating author_type)
+
+.page-header.ml-2
+	h1 Места
+
+.ml-2.mb-2
+	= link_to 'Создать', [:new, :admin, :place], class: 'btn btn-outline-primary'
+
+table.table.table-striped.text-center
+	thead
+		tr
+			- attributes.each do |attr|
+				th = @places.human_attribute_name(attr)
+			th Действия
+	tbody
+    - @places.each do |place|
+      tr
+        - attributes.each do |attr|
+          td
+            = place.public_send(attr)
+        td.btn-group.btn-group-sm
+        	= link_to edit_button_label, [:edit, :admin, place], class: 'btn btn-outline-primary'
+        	= link_to delete_button_label, [:admin, place], method: :delete, class: 'btn btn-danger'

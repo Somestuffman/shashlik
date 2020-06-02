@@ -1,0 +1,14 @@
+ru:
+  activerecord:
+    attributes:
+      administrator:
+        id: №
+        name: Имя
+        phone: Телефон
+
+      place:
+        id: №
+        name: Название
+        description: Описание
+        average_rating: Средняя оценка
+        author_type: Автор

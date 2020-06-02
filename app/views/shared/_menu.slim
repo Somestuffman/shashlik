@@ -1,0 +1,16 @@
+nav.navbar.navbar-expand-md.navbar-dark.bg-primary
+  = link_to 'Sh', [:admin, :places], class: 'navbar-brand'
+  button.navbar-toggler type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Домой'
+    span.navbar-toggler-icon
+  .collapse.navbar-collapse id='navbarNav'
+    ul.navbar-nav.mr-auto
+      li.nav-item
+        = link_to 'Места', [:admin, :places], class: 'nav-link'
+      li.nav-item
+        = link_to 'Администраторы', [:admin, :administrators], class: 'nav-link'
+    ul.navbar-nav
+      li.nav-item
+        span.nav-link.active
+          = @current_administrator.name
+      li.nav-item
+        = link_to logout_label, [:sessions], method: :delete, class: 'nav-link'

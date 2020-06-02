@@ -1,0 +1,9 @@
+= simple_form_for @form, url: [:admin, @form], html: { class: 'form-horizontal' } do |f|
+	= f.input :name, as: :string
+	= f.input :description, as: :text, required: false
+	= f.input :latitude, as: :float
+	= f.input :longitude, as: :float
+
+	.form-group.row
+    .col-sm-5
+      = f.button :submit, 'Подтвердить', class: 'btn btn-primary'
