@@ -180,7 +180,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
     mimemagic (0.3.3)
-    mini_magick (4.9.3)
+    mini_magick (4.9.4)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
@@ -378,7 +378,7 @@ DEPENDENCIES
   font-awesome-rails
   i18n
   jquery-rails
-  mini_magick (~> 4.8)
+  mini_magick (~> 4.9)
   pg (>= 0.18, < 2.0)
   phonelib
   puma (~> 3.12)
