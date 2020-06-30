@@ -29,7 +29,7 @@ gem 'reform-rails'
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'mini_magick', '~> 4.8'
+gem 'mini_magick', '~> 4.9'
 gem 'redis', '~> 4.0'
 gem 'uglifier'
 
