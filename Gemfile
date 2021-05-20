@@ -8,7 +8,7 @@ ruby '2.6.1'
 gem 'activerecord-postgis-adapter'
 gem 'fast_jsonapi'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 4.3'
 gem 'rails', '~> 5.2.2'
 gem 'rgeo-geojson'
 
